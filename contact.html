@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Ledger &amp; Vale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">Ledger<span>&amp;</span>Vale</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" id="navToggle"></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">File No. 004 — Open a Case</span>
+    <h1>Tell us what you're dealing with.</h1>
+    <p>A short description of your facility and current concern is enough for us to tell you whether we're the right fit and what a first engagement would look like.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container contact-grid">
+    <div>
+      <div class="info-block">
+        <span class="eyebrow">Email</span>
+        <p><a href="mailto:intake@ledgerandvale.example">intake@ledgerandvale.example</a></p>
+      </div>
+      <div class="info-block">
+        <span class="eyebrow">Phone</span>
+        <p><a href="tel:+15555550142">(555) 555-0142</a></p>
+      </div>
+      <div class="info-block">
+        <span class="eyebrow">Office</span>
+        <p>412 Ashworth Row, Suite 3<br>Cedar Falls, OH 44601</p>
+      </div>
+      <div class="info-block">
+        <span class="eyebrow">Response time</span>
+        <p>We reply to every case inquiry within two business days.</p>
+      </div>
+    </div>
+
+    <form action="mailto:intake@ledgerandvale.example" method="post" enctype="text/plain">
+      <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">What's going on?</label>
+        <textarea id="message" name="message" required placeholder="e.g. Upcoming state inspection, recent citation, first-time audit..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-solid" style="border:none; cursor:pointer; align-self:flex-start;">Send inquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container footer-row">
+    <span class="file-ref">Ledger &amp; Vale — Meridian Division</span>
+    <div>
+      <a href="services.html">Services</a> &nbsp;·&nbsp;
+      <a href="about.html">About</a> &nbsp;·&nbsp;
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
